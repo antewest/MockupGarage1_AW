@@ -8,7 +8,9 @@ $steel: #E1E1E1;
 $red: #BE0E18;
 
 html {
-    background-color:black;
+    background-image: url('../graphics/parkinggarage1.jpg');
+    background-size: cover;
+    
 }
 
 
@@ -60,6 +62,9 @@ header {
 }
 
 body {
+    
+    
+    background:transparent;
     margin: 0px;
     padding: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -67,10 +72,10 @@ body {
 
 main {
     
-    padding-top: 18%;
-    background-image: url('../graphics/parkinggarage1.jpg');
+
+    /*background-image: url('../graphics/parkinggarage1.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 
     #mainBody {
         width:100%;
@@ -78,21 +83,29 @@ main {
         border-radius: 3px;
 
         p {
+            background-color: $black75;
             padding: 1% 2% 2% 2%;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
+        .entry p:nth-Child(3){
+            background: $white55;
+            color: black;
+        }
+
+
         .vehicleContainer{
+            
+            margin-top: 5vh;
             text-align: center;
             margin-left: 5%;
         }
 
         .topic {
             padding-left: 10%;
-            color: $red;
             text-shadow: 0px 0px 2px black;
             font-weight:bold;
-            background: $black50;
+            background: $black75;
         }
 
         .staffList {
@@ -104,6 +117,7 @@ main {
             margin-bottom: 1vh;
 
             p:first-Child {
+                
                 font-weight:bold;
                 font-size: 1.2em;
                 margin:0;
@@ -115,15 +129,13 @@ main {
     .container {
         border-top: 2px solid $red;
         width:100%;
-        background-color: $white75;
 
         .col-md-8 {
             padding-left: 20%;
             padding-right: 20%;
 
             .bodyContent {
-                color:white;
-                background-color: $black50;
+                color:ghostwhite;
             }
         }
     }
@@ -131,21 +143,24 @@ main {
 
 .entry {
 
-    background-color: $black50;
+    /*background: rgba(255,255,255,0.2);*/
+    padding: 5px;
+    background: $white55;
     color:white;
     float:left;
     display:inline-block;
     margin: 5px;
+    border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     img {
         border: 1px solid black;
     }
 
-    p:nth-Child(3){
-        background-color: $white75;
-        color:black;
+    p {
+        margin: 0;
     }
+
 
     .staff {
         width: 160px;
@@ -163,7 +178,7 @@ iframe {
     border: 1px black solid;
     display:block;
     margin:auto;
-    margin-top: 3em;
+    margin-top: 10vh;
     margin-bottom: 3em;
     transition: all 300ms ease-in 30ms;
 
@@ -174,7 +189,10 @@ iframe {
 
 footer {
 
-    
+    position:fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
     box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-image: -webkit-linear-gradient(top, $steel, white);
     background-color : black;
@@ -200,11 +218,14 @@ footer {
     justify-content: center;
 
     padding: 5px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 5vh;
 
     .flexItem {
 
         color:white;
-        background-color: $black50;
+        background: $white55;
         border: 1px solid black;
         padding: 3px;
         margin: 3px;
@@ -218,11 +239,14 @@ footer {
             border: 1px solid black;
         }
 
-        p:nth-Child(3){
-            background:white;
-            color: black;
+        p {
+            margin:0;
         }
 
+        div:nth-child(3) {
+            background: $black50;
+        }
+        
         .staff {
             width: 160px;
             height: 200px;

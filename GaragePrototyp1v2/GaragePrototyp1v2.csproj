@@ -57,9 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.html" />
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="css\garage2.min.css" />
-    <Content Include="css\garage2.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -68,9 +68,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AboutUs.html" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\garage.css" />
+    <Content Include="css\garage2.scss" />
     <Content Include="Garage.html" />
     <Content Include="GarageFlex.html" />
     <Content Include="graphics\280_7991.jpg" />

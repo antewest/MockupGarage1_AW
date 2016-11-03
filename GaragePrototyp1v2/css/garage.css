@@ -1,0 +1,91 @@
+﻿:root {
+    --bodyBGColor: #B3B6B6;
+}
+
+.headerImage{
+    background-color: rgba(0,0,0,0.75);
+    border: 1px solid black;
+}
+
+header img {
+    margin: auto;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #585e5e;
+    color: rgb(20,20,20);
+}
+
+#mainBody {
+    background-color: rgba(255,255,255,0.55);
+    text-align: center;
+    margin: 1em;
+    border: 1px solid rgba(0,0,0,0.85);
+    border-radius: 3px;
+}
+
+.col-md-8 {
+    
+}
+
+.col-md-8 iframe {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.75);
+    margin-top: 2vh;
+    text-align: right;
+}
+
+footer ul {
+    margin-right: 5vw;
+    list-style: none;
+    color: white;
+}
+
+.navbarContainer {
+    margin-left: 16%;
+    margin-right: 16%;
+}
+
+.topic {
+    font-weight:bold;
+    background: rgba(255,255,255,0.5);
+}
+
+table {
+    margin-top:2vh;
+    background: rgba(255,255,255,0.5);
+}
+
+th:first-child {
+    text-align: center;
+}
+
+thead tr th {
+    font-weight: bolder;
+    font-size: 1.1em;
+
+}
+
+tr th {
+    font-size: 0.9em;
+    background: var(--bodyBGColor);
+}
+
+.staff {
+    width: 160px;
+    height: 200px;
+}
+
+.staffNames th{
+    text-align:center;
+}
+
+.staffInfo p {
+    text-align:center;
+}

@@ -1,0 +1,266 @@
+﻿$mainBG : #B3B6B6;
+$BG : #585e5e;
+$black75: rgba(0,0,0,0.75);
+$black50: rgba(0,0,0,0.55);
+$white55: rgba(255,255,255,0.55);
+$white75: rgba(255,255,255,0.75);
+$steel: #E1E1E1;
+$red: #BE0E18;
+
+html {
+    background-color:black;
+}
+
+
+header {
+
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: -webkit-linear-gradient(top, $steel, white);
+    background-color: $steel;
+    border-bottom: solid 2px $red;
+    
+    .navbar {
+        max-width: 525px;
+        margin-left: 8%;
+        margin-top : 10%;
+        border-radius: 5px;
+        border-width: 0px;
+
+        background-color: black;
+        background-image: -webkit-linear-gradient(top, white, $white55);
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+        li a {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.2em;
+            font-weight: bold;
+            font-stretch:expanded;
+            color: #BE0E18;
+            background-image: none;
+            transition: all 100ms ease-in-out 50ms;
+        }
+
+        li a:hover {
+            color: whitesmoke;
+            background-image: -webkit-linear-gradient(top, $black50, $black75);
+            
+        }
+
+        .active {
+            background-color: $black75;
+            a {
+                color:white;
+            }
+        }
+    }
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    
+    padding-top: 18%;
+    background-image: url('../graphics/parkinggarage1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    #mainBody {
+        width:100%;
+        margin: 1em;
+        border-radius: 3px;
+
+        p {
+            padding: 1% 2% 2% 2%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .vehicleContainer{
+            text-align: center;
+            margin-left: 5%;
+        }
+
+        .topic {
+            padding-left: 10%;
+            color: $red;
+            text-shadow: 0px 0px 2px black;
+            font-weight:bold;
+            background: $black50;
+        }
+
+        .staffList {
+
+            display:block;
+            margin: auto;
+            text-align: center;
+            margin-left: 1vw;
+            margin-bottom: 1vh;
+
+            p:first-Child {
+                font-weight:bold;
+                font-size: 1.2em;
+                margin:0;
+                }
+        }
+    }
+
+
+    .container {
+        border-top: 2px solid $red;
+        width:100%;
+        background-color: $white75;
+
+        .col-md-8 {
+            padding-left: 20%;
+            padding-right: 20%;
+
+            .bodyContent {
+                color:white;
+                background-color: $black50;
+            }
+        }
+    }
+}
+
+.entry {
+
+    background-color: $black50;
+    color:white;
+    float:left;
+    display:inline-block;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    img {
+        border: 1px solid black;
+    }
+
+    p:nth-Child(3){
+        background-color: $white75;
+        color:black;
+    }
+
+    .staff {
+        width: 160px;
+        height: 200px;
+    }
+
+    &:hover {
+        background-color: $black75;
+    }
+}
+
+
+iframe {
+    
+    border: 1px black solid;
+    display:block;
+    margin:auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    transition: all 300ms ease-in 30ms;
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+footer {
+
+    
+    box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: -webkit-linear-gradient(top, $steel, white);
+    background-color : black;
+    text-align: right;
+    padding-top: 1vh;
+    padding-bottom: 0.5vh;
+
+    ul {
+        margin-right: 5vw;
+        list-style: none;
+        color: #BE0E18;
+    }
+}
+
+.flex-Container {
+
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap:wrap;
+
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    padding: 5px;
+
+    .flexItem {
+
+        color:white;
+        background-color: $black50;
+        border: 1px solid black;
+        padding: 3px;
+        margin: 3px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 100ms ease-in 40ms;
+        
+        @extend .addBosse;
+
+        img {
+            border: 1px solid black;
+        }
+
+        p:nth-Child(3){
+            background:white;
+            color: black;
+        }
+
+        .staff {
+            width: 160px;
+            height: 200px;
+        }
+
+        &:hover{
+            background-color: $black75;
+        }
+
+        
+    }
+
+    .flex-item:first-child {
+        margin-right: auto;
+    }
+}
+
+.addBosse {
+
+    &:hover {
+            position:relative;
+            box-shadow:none;
+            
+        }
+
+    &:hover:before {
+            
+        content:"";
+        width: 70px;
+        height: 70px;
+            
+        border-radius: 50%;
+        background-image: url('../graphics/staff01.jpg');
+        background-size:contain;
+        position: absolute;
+        right: 125px;
+        top: -30px;
+        border: 2px solid $black75;
+            
+        }
+}
